@@ -5,13 +5,13 @@
 ══════════════════════════════ */
 
 :root {
-  --color-acropole: #608063;
+  --color-acropole: #d0ffd5; /*608063*/
   --color-black: #314933;
   --color-black-rgb: 49, 73, 51;
   --color-primary: #81d742;
   --color-green: #a0ce4e;
   --color-dark: #274214;
-  --color-light: #fff;
+  --color-light: #274214; /*fff*/
   --color-light-rgb: 255, 255, 255;
   --color-details: #c4c7b2;
   --color-text: #565656;
@@ -48,7 +48,7 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   /* color: var(--color-text); */
-  color: var(--color-light);
+  color: var(--color-acropole);
   overflow-x: hidden;
   background-color: var(--color-acropole);
 }
@@ -239,7 +239,7 @@ header {
   /* display: flex;
   align-items: center;
   padding: 1rem 1.5rem; */
-  color: var(--color-light);
+  color: var(--color-acropole);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -272,6 +272,11 @@ header {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
+}
+
+.header.scrolled .nav-bottom .menu > li > a::after,
+.header.scrolled .nav-bottom .dropdown-toggle::after {
+  background: var(--color-acropole);
 }
 
 
@@ -364,11 +369,12 @@ header {
 /*-- PAGE --*/
 .hero {
   position: relative;
+  /* color: var(--color-acropole); */
 }
 
 .hero-bg {
   position: relative;
-  background: rgba(var(--color-black-rgb), 0.6);
+  background: rgba(var(--color-black-rgb), 0.9);
   border-radius: 0 0 25px 25px;
   overflow: hidden;
   padding-bottom: 2rem;
@@ -535,7 +541,7 @@ header {
 .content p {
   font-size: 1rem;
   line-height: 1.85;
-  color: var(--color-light);
+  color: var(--color-acropole);
   font-weight: 500;
   max-width: 68ch; /* trava a linha em algo legível, evita texto "esticado" */
   text-align: justify; /* justifica o texto para um visual mais limpo */
@@ -552,7 +558,7 @@ header {
 .content li {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--color-light);
+  color: var(--color-acropole);
   font-weight: 300;
 }
 
@@ -580,7 +586,16 @@ header {
 
 .diferenciais-intro em {
   /* color: rgba(var(--color-black-rgb)); */
-  color: var(--color-black);
+  color: var(--color-primary);
+  filter: drop-shadow(2px 2px 2px rgba(var(--color-black-rgb), 0.1));
+}
+
+.diferenciais-intro p {
+  color: var(--color-light);
+}
+
+.diferenciais-intro h2 {
+  color: var(--color-light);
 }
 
 .diferenciais-grid {
@@ -700,7 +715,7 @@ header {
 .beneficios-header p {
   font-size: 1rem;
   line-height: 1.85;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--color-light);
   max-width: 560px;
   text-align: center;
 }
@@ -746,7 +761,7 @@ header {
 .beneficios-card h3 {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--color-light);
+  color: var(--color-acropole);
   margin-bottom: 0.5rem;
 }
 
@@ -787,7 +802,7 @@ header {
 .beneficio-info strong {
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--color-light);
+  color: var(--color-acropole);
 }
 
 .beneficio-info span {
@@ -859,7 +874,7 @@ header {
 .aula-item strong {
   font-size: 0.92rem;
   font-weight: 600;
-  color: var(--color-light);
+  color: var(--color-acropole);
 }
 
 .aula-item span {
@@ -962,7 +977,7 @@ header {
   font-size: 1rem;
   line-height: 1.85;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--color-light);
 }
 
 /* Botão */
@@ -1037,7 +1052,7 @@ header {
   line-height: 1.2;
   font-weight: 700;
 
-  color: var(--color-light);
+  color: var(--color-acropole);
 }
 
 .cta-final h2 em {
@@ -1391,7 +1406,7 @@ header {
 
   /* Texto fica claro quando a navbar fica preta */
   .header.scrolled .mobile-menu-toggle {
-    color: var(--color-light);
+    color: var(--color-acropole);
   }
 
   /* Ícone hamburger */
@@ -1550,7 +1565,7 @@ header {
   /* Links principais */
 
   .header.scrolled .nav-bottom .menu > li > a {
-    color: var(--color-light);
+    color: var(--color-acropole);
   }
 
   .nav-bottom .menu > .nav-item > a:hover,
@@ -1615,7 +1630,7 @@ header {
   }
 
   .header.scrolled .nav-bottom .dropdown-toggle {
-    color: var(--color-light) !important;
+    color: var(--color-acropole) !important;
   }
 
   /* .nav-bottom .dropdown-toggle:hover,
