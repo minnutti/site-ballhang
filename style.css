@@ -11,7 +11,7 @@
   --color-primary: #81d742;
   --color-green: #a0ce4e;
   --color-dark: #274214;
-  --color-light: #274214; /*fff*/
+  --color-light: #fff; /*fff*/
   --color-light-rgb: 255, 255, 255;
   --color-details: #c4c7b2;
   --color-text: #565656;
@@ -268,7 +268,7 @@ header {
   right: 1.5rem;
   bottom: 6px;
   height: 2px;
-  background: var(--color-light);
+  background: var(--color-dark);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -591,11 +591,11 @@ header {
 }
 
 .diferenciais-intro p {
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .diferenciais-intro h2 {
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .diferenciais-grid {
@@ -691,7 +691,7 @@ header {
 
 .beneficios-header h2 em {
   font-style: italic;
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .beneficios-header a {
@@ -715,7 +715,7 @@ header {
 .beneficios-header p {
   font-size: 1rem;
   line-height: 1.85;
-  color: var(--color-light);
+  color: var(--color-dark);
   max-width: 560px;
   text-align: center;
 }
@@ -936,7 +936,7 @@ header {
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.18;
   font-weight: 700;
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .abordagem-home h2 em {
@@ -977,7 +977,7 @@ header {
   font-size: 1rem;
   line-height: 1.85;
   font-weight: 400;
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 /* Botão */
@@ -1095,7 +1095,7 @@ header {
 
 .footer {
   background: var(--color-black);
-  color: var(--color-light);
+  color: var(--color-dark);
   padding-top: 0.5rem;
   border-radius: 60px 60px 0 0;
 }
@@ -1733,7 +1733,7 @@ header {
   .nav-bottom .dropdown a:hover,
   .nav-bottom .dropdown a:focus {
     font-weight: 800;
-    color: var(--color-light);
+    color: var(--color-dark);
     background: rgba(255, 255, 255, 0.08);
   }
 
@@ -1755,7 +1755,7 @@ header {
     border-radius: 8px;
 
     background: var(--color-black);
-    color: var(--color-light);
+    color: var(--color-dark);
 
     font-family: "Poppins", sans-serif;
     font-size: 0.85rem;
